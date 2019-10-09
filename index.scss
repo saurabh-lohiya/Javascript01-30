@@ -1,0 +1,36 @@
+body {
+    background: url("band.jpg");
+    background-size: cover;
+    // background-position: center;
+}
+.keys {
+    margin-top: 20em;
+    margin-left: 25%;
+    // margin: auto;
+    width: 45em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    .key {
+        width: 3.5em;
+        height: 5em;
+        transition: 0.07s;
+        background: hsla(0, 0, 0, 0.5);
+        border: 2px solid black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        span {
+            color: aliceblue;
+        }
+        small {
+            color: yellow;
+        }
+    }
+}
+.playing {
+    transform: scale(1.2);
+    border: 3px solid yellow;
+    box-shadow: 0 0 10px #000;
+}
